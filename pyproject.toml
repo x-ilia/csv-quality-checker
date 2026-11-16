@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv-quality-checker"
+version = "0.1.0"
+description = "Validate CSV data against a small JSON schema and produce structured issue reports."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+csv-quality-checker = "csv_quality.core:main"
+
+[tool.setuptools.packages.find]
+include = ["csv_quality*"]

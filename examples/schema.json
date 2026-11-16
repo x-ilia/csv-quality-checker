@@ -1,0 +1,13 @@
+{
+  "id": {
+    "type": "integer",
+    "required": true,
+    "unique": true
+  },
+  "name": {
+    "required": true
+  },
+  "joined": {
+    "type": "date"
+  }
+}
